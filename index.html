@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hockeys Club</title>
+    <title> BD Hockeys</title>
     <!-- Tailwind & Daisy UI CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -22,6 +22,7 @@
                 clifford: '#da373d',
                 'text-primary': '#AFAFAF',
                 'text-regular':'#212124',
+                'btn-orange':'#FF4240;'
               }
             }
           }
@@ -134,7 +135,60 @@
             </div>
         </section>
 
-        
+        <!-- Program section -->
+        <section class="mb-8 lg:mb-20 mt-8 lg:mt-20 mx-5">
+          <h1 class="font-extrabold text-2xl lg:text-4xl text-center mb-4">Program Sections</h1>
+          <p class="font-medium text-base text-text-regular text-center lg:px-56 mb-6 lg:mb-14">There are three kinds of programs that we provide.They are professional program , junior program , teenager program. Description are given below.</p>
+
+          <!-- programs card -->
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
+              <!-- Junior Program -->
+              <div class="card bg-base-100 shadow-xl image-full lg:h-[360px]">
+                <figure><img src="images/2.png"  class="w-full" alt="junior hockeys"/></figure>
+                <div class="card-body">
+                    <div class="sapce-y-3 lg:space-y-5 lg:mt-20">
+                        <h2 class="card-title font-extrabold text-xl lg:text-3xl text-white ">Junior Program</h2>
+                        <p class="font-light text-sm lg:pr-10">BD Hockey's junior program provides opportunities for players ages 16-to-20 to hone and enhance their skills and is an important part of the organization's overall efforts related to player development.</p>
+                        <div class="card-actions ">
+                        <button class="btn bg-btn-orange border-none text-white">Register Now!</button>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+              <!-- Teenager Program -->
+              <div class="card bg-base-100 shadow-xl image-full lg:h-[360px]">
+                <figure><img src="images/3.png" class="w-full" alt="junior hockeys"/></figure>
+                <div class="card-body">
+                  <div class="space-y-3 lg:space-y-5 mt-5 lg:mt-20">
+                        <h2 class="card-title font-extrabold text-xl lg:text-3xl text-white">Teenager Program</h2>
+                        <p class="font-light text-sm lg:pr-10">BD Hockey's teenager program is a recreational level hockey program for boys and girls ages 6-14, operated at all three different County ice facilities.The program promotes the ideals of fair play, sportsmanship and teamwork.</p>
+
+                        <div class="card-actions ">
+                        <button class="btn bg-btn-orange border-none text-white">Register Now!</button>
+                        </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Professional Program -->
+              <div class="card bg-base-100 shadow-xl image-full lg:col-span-2 lg:h-[360px]">
+                <figure><img src="images/2.png" class="w-full" alt="junior hockeys"/></figure>
+                <div class="card-body">
+                   <div class="sapce-y-3 lg:space-y-5 lg:mt-20">
+                      <h2 class="card-title font-extrabold text-xl lg:text-3xl text-white">Professional Program</h2>
+                      <p class="font-light text-sm lg:pr-20">BD Hockey's professional program provides offers players the unique opportunity to pursue a professional hockey career at the highest levels while earning a college degree from some of the world's most prestigious institutions of higher learning.</p>
+
+                      <div class="card-actions ">
+                          <button class="btn bg-btn-orange border-none text-white">Register Now!</button>
+                      </div>
+                   </div>
+                </div>
+              </div>
+
+          </div>
+
+        </section>
     </main>
 
     <footer>
