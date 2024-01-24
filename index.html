@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hockeys Club</title>
+    <!-- Tailwind & Daisy UI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Manrope font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Custom colors -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'text-primary': '#AFAFAF',
+                'text-regular':'#212124',
+              }
+            }
+          }
+        }
+    </script>
+
+    <!-- styles -->
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .font-manrope{
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+
+</head>
+<body class="font-manrope">
+    
+    <header class="container lg:mx-auto mt-5 lg:mt-20">
+        <!-- banner -->
+        <section class="relative mx-5">
+            <!-- slider -->
+            <div class="carousel w-full">
+
+                <div id="slide1" class="carousel-item relative w-full lg:h-[400px]">
+                  <img src="images/1.png" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a> 
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+
+                <div id="slide2" class="carousel-item relative w-full lg:h-[400px]">
+                  <img src="images/4.png" class="w-full"/>
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a> 
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+               
+                <div id="slide3" class="carousel-item relative w-full lg:h-[400px]">
+                    <img src="images/3.png" class="w-full" />
+                    <div class="absolute flex justify-between transform   -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a> 
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+            <!-- badge -->
+            <div class="lg:absolute bg-black w-full lg:w-2/6  p-4 lg:p-7 rounded-2xl lg:rounded-3xl mt-8 lg:-mt-40 lg:left-[800px]">
+                <h3 class="font-extrabold text-xl text-white mb-2">Meet all the heroes from the field</h3>
+                <p class="text-text-primary text-sm font-medium">Yes it's true! Now you can meet all the heroes from the field. Your dream come true!!</p>
+            </div>   
+        </section>
+    </header>
+
+    <main class="container lg:mx-auto">
+        <!-- Professional Hockeys Club -->
+        <section class="mb-8 lg:mb-20 mt-8 lg:mt-20 mx-5">
+            <h1 class="font-extrabold text-2xl lg:text-4xl text-center mb-4">Professional Hockeys Club</h1>
+            <p class="font-medium text-base text-text-regular text-center lg:px-56 mb-6">There are many facilities in professional hockeys club. Like as prayer facilities , experienced coach , senior player , practice ground etc. </p>
+
+            <!-- Facility Card -->
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-5 mx-5 lg:mx-0">
+              <!-- Prayer Facility -->
+                <div class="card">
+                  <figure class="px-10 pt-10">
+                    <div class="radial-progress text-red-500 font-extrabold " style="--value:87;"    role="progressbar">87%</div>
+                  </figure>
+                  <div class="card-body items-center text-center">
+                    <h2 class="card-title font-semibold text-xl">Prayer Facility</h2>
+                    <p class="font-normal text-sm text-text-regular">Here you get daily 5 times prayer facilities.It refresh you both body and mind.</p>
+                  </div>
+                </div>
+
+                <!-- Experienced Coach -->
+                <div class="card">
+                  <figure class="px-10 pt-10">
+                    <div class="radial-progress text-green-400 font-extrabold " style="--value:95;"    role="progressbar">95%</div>
+                  </figure>
+                  <div class="card-body items-center text-center">
+                    <h2 class="card-title font-semibold text-xl">Experienced Coach</h2>
+                    <p class="font-normal text-sm text-text-regular">Here you get so many experienced coach. They can help you to improve your skill.</p>
+                  </div>
+                </div>
+
+                <!-- Senior Player -->
+                <div class="card">
+                  <figure class="px-10 pt-10">
+                    <div class="radial-progress text-amber-500 font-extrabold " style="--value:90;"    role="progressbar">90%</div>
+                  </figure>
+                  <div class="card-body items-center text-center">
+                    <h2 class="card-title font-semibold text-xl">Senior Player</h2>
+                    <p class="font-normal text-sm text-text-regular">Here are so many senior player.They also help you to grow your skill.</p>
+                  </div>
+                </div>
+
+                <!-- Training Ground -->
+                <div class="card">
+                  <figure class="px-10 pt-10">
+                    <div class="radial-progress text-blue-500 font-extrabold " style="--value:80;"    role="progressbar">80%</div>
+                  </figure>
+                  <div class="card-body items-center text-center">
+                    <h2 class="card-title font-semibold text-xl">Training Ground</h2>
+                    <p class="font-normal text-sm text-text-regular">Here you get 10 training ground.So that you can practice anytime.</p>
+                  </div>
+                </div>
+            </div>
+        </section>
+
+        
+    </main>
+
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
